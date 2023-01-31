@@ -11,6 +11,7 @@ public class Main {
 		System.out.println("Which pack would you like to open?");
 		System.out.println("Type 1 for Silver Tempest");
 		System.out.println("Type 2 for Lost Origin");
+		System.out.println("Type 3 for Astral Radiance");
 		int packType; 
 		while (true)
 			try {
@@ -22,8 +23,9 @@ public class Main {
 				System.out.println("Which pack would you like to open?");
 				System.out.println("Type 1 for Silver Tempest");
 				System.out.println("Type 2 for Lost Origin");
+				System.out.println("Type 3 for Astral Radiance");
 			}
-		Pack currentPack = new Pack();
+		
 		
 		String packName = "";
 		switch (packType) {
@@ -33,12 +35,15 @@ public class Main {
 		case 2:
 			packName = "Lost Origin";
 			break;
+		case 3:
+			packName = "Astral Radiance";
 		}
 		
+		Pack currentPack = new Pack();
 		currentPack.setName(packName);
 		System.out.println(currentPack.getName());
 		
-		if (packType > 0 && packType <= 2) {
+		if (packType > 0 && packType <= 3) {
 			System.out.println("How many packs would you like to open?");
 			int pack1Amount = 0;
 			while (true) 
@@ -58,6 +63,8 @@ public class Main {
 				System.out.println("Congrats! You pulled a " + currentPack.randomizeCard(rarity));
 				if (packName.contentEquals("Silver Tempest")) {
 					Thread.sleep(250);
+				}else if (packName.contentEquals("Astral Radiance")) {
+					Thread.sleep(200);
 				}
 				System.out.println("===================================");
 				count++;

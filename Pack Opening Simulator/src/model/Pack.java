@@ -54,6 +54,29 @@ public class Pack {
 			addToList(gold1, rarities);
 			addToList(altArt1, rarities);
 			break;
+		 case "Astral Radiance":
+			 List<String> noHit2 = Collections.nCopies(1449523,  "Regular Rare");
+				List<String> holo2 = Collections.nCopies(565110, "Holo");
+				List<String> v2 = Collections.nCopies(282555, "V");
+				List<String> vMax2 = Collections.nCopies(80730, "V Max");
+				List<String> fullArtV2 = Collections.nCopies(49140, "Full Art V");
+				List<String> rainbow2 = Collections.nCopies(28980, "Rainbow Rare");
+				List<String> fullArtTrainer2 = Collections.nCopies(24570, "Full Art Trainer");
+				List<String> gold2 = Collections.nCopies(17388, "Gold");
+				List<String> altArt2 = Collections.nCopies(16744, "Alt Art");
+				addToList(noHit2, rarities);
+				addToList(holo2, rarities);
+				addToList(v2, rarities);
+				addToList(vMax2, rarities);
+				addToList(fullArtV2, rarities);
+				addToList(rainbow2, rarities);
+				addToList(fullArtTrainer2, rarities);
+				addToList(gold2, rarities);
+				addToList(altArt2, rarities);
+				break;
+		 default:
+			 rarities.add("Uh Oh, something went wrong...");
+			 break;
 			
 		}
 		
@@ -325,6 +348,153 @@ public class Pack {
 				names.add("**Alt Art Giratina V**");
 				break;
 			}
+		 case "Astral Radiance":
+			 switch (rarity) {
+			 case "Regular Rare":
+				names.add("Rare Glaceon");
+				names.add("Rare Hisuian Arcanine");
+				names.add("Rare Hisuian Avalugg");
+				names.add("Rare Hisuian Basculegion");
+				names.add("Rare Hisuian Braviary");
+				names.add("Rare Hisuian Overqwuil");
+				names.add("Rare Kleavor");
+				names.add("Rare Leafeon");
+				names.add("Rare Mamoswine");
+				names.add("Rare Mightyena");
+				names.add("Rare Mismagius");
+				names.add("Rare Rapidash");
+				names.add("Rare Regice");
+				names.add("Rare Regidrago");
+				names.add("Rare Regieleki");
+				names.add("Rare Regirock");
+				names.add("Rare Registeel");
+				names.add("Rare Shaymin");
+				names.add("Rare Thievul");
+				names.add("Rare Ursaluna");
+				names.add("Rare Vespiquen");
+				break;
+			 case "Holo":
+				 names.add("Holo Absol");
+				 names.add("Holo Adaman");
+				 names.add("Holo Bastiodon");
+				 names.add("Holo Diancie");
+				 names.add("Holo Gallade");
+				 names.add("Holo Hisuian Decidueye");
+				 names.add("Holo Hisuian Lilligant");
+				 names.add("Holo Hisuian Samurott");
+				 names.add("Holo Hisuian Sneasler");
+				 names.add("Holo Hisuian Typhlosion");
+				 names.add("Holo Irida");
+				 names.add("Holo Keldeo");
+				 names.add("Holo Kleavor");
+				 names.add("Holo Magnezone");
+				 names.add("Holo Mespirit");
+				 names.add("Holo Miltank");
+				 names.add("Holo Rampardos");
+				 names.add("Holo Regigigas");
+				 names.add("Holo Togekiss");
+				 names.add("Holo Wyrdeer");
+				break;
+			 case "V":
+				names.add("Beedrill V");
+				names.add("Hisuian Lilligant V");
+				names.add("Heatran V");
+				names.add("Starmie V");
+				names.add("Origin Forme Palkia V");
+				names.add("Galarian Mr. Rime V");
+				names.add("Luxray V");
+				names.add("Hisuian Typhlosion V");
+				names.add("Machamp V");
+				names.add("Lucario V");
+				names.add("Hisuian Decidueye V");
+				names.add("Kleavor V");
+				names.add("Hisuian Sneasler V");
+				names.add("Darkrai V");
+				names.add("Hisuian Samurott V");
+				names.add("Origin Forme Dialga V");
+				names.add("Garchomp V");
+				names.add("Oranguru V");
+				names.add("Wyrdeer V");
+				break;
+			 case "V Max":
+				names.add("Hisuian Lilligant Vstar");
+				names.add("Heatran Vmax");
+				names.add("Origin Forme Palkia Vstar");
+				names.add("Hisuian Typhlosion Vstar");
+				names.add("Machamp Vmax");
+				names.add("Hisuian Decidueye Vstar");
+				names.add("Darkrai Vstar");
+				names.add("Hisuian Samurott Vstar");
+				names.add("Origin Forme Dialga Vstar");
+				break;
+			 case "Full Art V":
+				names.add("Full Art Beedrill V");
+				names.add("Full Art Hisuian Lilligant V");
+				names.add("Full Art Virizion V");
+				names.add("Full Art Heatran V");
+				names.add("Full Art Starmie V");
+				names.add("Full Art Luxray V");
+				names.add("Full Art Hisuian Typhlosion V");
+				names.add("Full Art Jirachi V");
+				names.add("Full Art Machamp V");
+				names.add("Full Art Hisuian Decidueye V");
+				names.add("Full Art Hisuian Sneasler V");
+				names.add("Full Art Hisuian Samurott V");
+				names.add("Full Art Garchomp V");
+				names.add("Full Art Oranguru V");
+				names.add("Full Art Wyrdeer V");
+				break;
+			 case "Rainbow Rare":
+				names.add("Rainbow Hisuian Lilligant Vstar");
+				names.add("Rainbow Heatran Vmax");
+				names.add("Rainbow Origin Forme Palkia Vstar");
+				names.add("Rainbow Hisuian Typlosion Vstar");
+				names.add("Rainbow Machamp Vmax");
+				names.add("Rainbow Hisuian Decidueye Vstar");
+				names.add("Rainbow Kleavor Vstar");
+				names.add("Rainbow Hisuian Samurott Vstar");
+				names.add("Rainbow Origin Forme Dialga Vstar");
+				names.add("Rainbow Adaman");
+				names.add("Rainbow Choy");
+				names.add("Rainbow Cyllene");
+				names.add("Rainbow Gardenia's Vigor");
+				names.add("Rainbow Grant");
+				names.add("Rainbow Irida");
+				names.add("Rainbow Kamado");
+				names.add("Rainbow Roxanne");
+				names.add("Rainbow Zisu");
+				break;
+			 case "Full Art Trainer":
+				names.add("Adaman");
+				names.add("Choy");
+				names.add("Cyllene");
+				names.add("Gardenia's Vigor");
+				names.add("Grant");
+				names.add("Irida");
+				names.add("Kamado");
+				names.add("Roxanne");
+				names.add("Zisu");
+				break;
+			 case "Gold":
+				names.add("Gold Origin Form Palkia Vstar");
+				names.add("Gold Hisuian Samurott Vstar");
+				names.add("Gold Origin Form Palkia Vstar");
+				names.add("Gold Choice Belt");
+				names.add("Gold Jubilife Village");
+				names.add("Gold Path to the Peak");
+				names.add("Gold Temple of Sinnoh");
+				names.add("Gold Trekking Boots");
+				names.add("Gold Double Turbo Energy");
+				break;
+			 case "Alt Art":
+				 names.add("**Alt Art Beedrill V**");
+				 names.add("**Alt Art Hisuian Lilligant V**");
+				 names.add("**Alt Art Origin Forme Palkia V**");
+				 names.add("**Alt Art Machamp V**");
+				 names.add("**Alt Art Hisuian Sneasler V**");
+				 names.add("**Alt Art Origin Forme Dialga V**");
+				break;
+			 }
 		}
 		
 		Collections.shuffle(names);
