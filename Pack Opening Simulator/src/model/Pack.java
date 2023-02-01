@@ -54,26 +54,29 @@ public class Pack {
 			addToList(gold1, rarities);
 			addToList(altArt1, rarities);
 			break;
+			
 		 case "Astral Radiance":
-			 List<String> noHit2 = Collections.nCopies(1449523,  "Regular Rare");
-				List<String> holo2 = Collections.nCopies(565110, "Holo");
-				List<String> v2 = Collections.nCopies(282555, "V");
-				List<String> vMax2 = Collections.nCopies(80730, "V Max");
-				List<String> fullArtV2 = Collections.nCopies(49140, "Full Art V");
-				List<String> rainbow2 = Collections.nCopies(28980, "Rainbow Rare");
-				List<String> fullArtTrainer2 = Collections.nCopies(24570, "Full Art Trainer");
-				List<String> gold2 = Collections.nCopies(17388, "Gold");
-				List<String> altArt2 = Collections.nCopies(16744, "Alt Art");
-				addToList(noHit2, rarities);
-				addToList(holo2, rarities);
-				addToList(v2, rarities);
-				addToList(vMax2, rarities);
-				addToList(fullArtV2, rarities);
-				addToList(rainbow2, rarities);
-				addToList(fullArtTrainer2, rarities);
-				addToList(gold2, rarities);
-				addToList(altArt2, rarities);
-				break;
+			 
+			List<String> noHit2 = Collections.nCopies(1449523,  "Regular Rare");
+			List<String> holo2 = Collections.nCopies(565110, "Holo");
+			List<String> v2 = Collections.nCopies(282555, "V");
+			List<String> vMax2 = Collections.nCopies(80730, "V Max");
+			List<String> fullArtV2 = Collections.nCopies(49140, "Full Art V");
+			List<String> rainbow2 = Collections.nCopies(28980, "Rainbow Rare");
+			List<String> fullArtTrainer2 = Collections.nCopies(24570, "Full Art Trainer");
+			List<String> gold2 = Collections.nCopies(17388, "Gold");
+			List<String> altArt2 = Collections.nCopies(16744, "Alt Art");
+			addToList(noHit2, rarities);
+			addToList(holo2, rarities);
+			addToList(v2, rarities);
+			addToList(vMax2, rarities);
+			addToList(fullArtV2, rarities);
+			addToList(rainbow2, rarities);
+			addToList(fullArtTrainer2, rarities);
+			addToList(gold2, rarities);
+			addToList(altArt2, rarities);
+			break;
+			
 		 default:
 			 rarities.add("Uh Oh, something went wrong...");
 			 break;
@@ -207,13 +210,16 @@ public class Pack {
 				names.add("Gold V Guard Energy");
 				break;
 		 	 case "Alt Art":
-				names.add("**Alt ArtUnown V**");
-				names.add("**Alt ArtSkunktank V**");
-				names.add("**Alt ArtRegidrago V**");
+				names.add("**Alt Art Unown V**");
+				names.add("**Alt Art Skunktank V**");
+				names.add("**Alt Art Regidrago V**");
 				names.add("**Alt Art Lugia V**");
 				break;
 			}
-		 case "Lost Origin":
+			
+			break;
+			
+		 case "Lost Origin": 
 			switch (rarity) {
 			 case "Regular Rare":
 				names.add("Rare Ariados");
@@ -348,6 +354,9 @@ public class Pack {
 				names.add("**Alt Art Giratina V**");
 				break;
 			}
+			
+			break;
+			
 		 case "Astral Radiance":
 			 switch (rarity) {
 			 case "Regular Rare":
@@ -495,6 +504,9 @@ public class Pack {
 				 names.add("**Alt Art Origin Forme Dialga V**");
 				break;
 			 }
+			 
+			 break;
+			 
 		}
 		
 		Collections.shuffle(names);

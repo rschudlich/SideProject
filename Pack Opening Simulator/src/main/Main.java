@@ -37,6 +37,7 @@ public class Main {
 			break;
 		case 3:
 			packName = "Astral Radiance";
+			break;
 		}
 		
 		Pack currentPack = new Pack();
